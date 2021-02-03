@@ -1,0 +1,160 @@
+@import "headerFooter";
+@import"color";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    direction: ltr;
+    background-color: $colorhead;
+    height: 100%;
+    text-align: center;
+
+
+    main {
+
+        margin-top: 80px;
+
+        .divdress {
+
+            .dress {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        .detail {
+            position: relative;
+            padding: 50px 5%;
+            text-align: left;
+
+            .mamgo {
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: #787878;
+                margin-bottom: 10px;
+                display: block;
+            }
+
+            .title {
+                font-size: 30px;
+                display: block;
+                margin-bottom: 10px;
+                color: #000;
+                line-height: 1.3;
+                font-weight: 700;
+                font-family: ubuntu, sans-serif;
+            }
+
+            .product-price {
+                margin-bottom: 0;
+                font-family: ubuntu, sans-serif;
+                font-size: 24px;
+                color: #dc0345;
+                font-weight: 700;
+
+                .old-price {
+                    display: inline-block;
+                    font-family: ubuntu, sans-serif;
+                    font-size: 24px;
+                    color: #787878;
+                    font-weight: 700;
+                    text-decoration: line-through;
+                    margin-right: 15px;
+                }
+            }
+
+            .desc {
+                font-size: 20px;
+                color: #787878;
+                line-height: 2;
+                font-weight: 400;
+                margin: 5px 0px;
+            }
+
+            .selectsize {
+                margin-top: 50px;
+                margin-bottom: 30px;
+
+                select {
+                    width: 125px;
+                    height: 50px;
+                    font-family: inherit;
+                    font-size: inherit;
+                    padding-left: 10px;
+                    border-radius: 10px;
+                }
+
+                .addtocart {
+                    padding: 20px 0px;
+                    margin-top: 30px;
+                    
+
+                    .btn {
+                        display: inline-block;
+                        min-width: 170px;
+                        height: 50px;
+                        color: #fff;
+                        border: none;
+                        text-transform: uppercase;
+                        background-color: #0315ff;
+                        letter-spacing: 1.5px;
+                        font-weight: 600;
+                        border-radius: 10px;
+
+                        &:hover {
+                            background-color: #ff084e;
+                            transition: 1s;
+                        }
+                        
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    @media only screen and (min-width: 992px) {
+        .divmain {
+            display: flex;
+        }
+
+    }
+
+
+
+    #scrollUp {
+        position: fixed;
+        z-index: 200;
+        display: block;
+        background-color: #ff084e;
+        border-radius: 50%;
+        bottom: 60px;
+        box-shadow: 0 3px 6px 0 rgba(298, 26, 235, 0.3);
+        color: #ffffff;
+        font-size: 25px;
+        height: 40px;
+        line-height: 40px;
+        right: 60px;
+        text-align: center;
+        width: 40px;
+    }
+
+    #scrollUp:hover {
+        transition: all 2s;
+        background-color: blue;
+        color: orange;
+
+    }
+
+}
+
+html {
+    scroll-behavior: smooth;
+}

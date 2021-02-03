@@ -1,0 +1,210 @@
+@import "headerFooter";
+@import"color";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    direction: ltr;
+    background-color: $colorhead;
+    text-align: center;
+
+
+    main {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 100px;
+        margin-bottom: 40px;
+        margin-top: -15px;
+
+        .contact {
+            width: 100%;
+            height: 140px;
+            background-image: url('img/breadcumb.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+
+            .divcontact {
+                position: relative;
+                width: 100%;
+                height: 100%;
+
+                .h5contact {
+                    font-size: 40px;
+                    line-height: 140px;
+                }
+            }
+        }
+
+        .divadress {
+            width: 100%;
+            margin-bottom: 20px;
+            background-color: #f5f1ec;
+
+            .allform {
+                text-align: center;
+                padding: 30px 40px;
+                text-transform: uppercase;
+
+                .formContact {
+                    background-color: lightgrey;
+                    padding: 10px;
+
+                    .divform {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+
+                        input {
+                            border-radius: 10px;
+                            padding-left: 10px;
+                        }
+
+                        label {
+                            padding-bottom: 10px;
+                        }
+
+                        .divlab {
+                            margin-top: 15px;
+                            max-width: 400px;
+
+                            
+
+                            @media only screen and (max-width: 500px) {
+                                .labtn{
+                                    width: 180px;
+                                }
+                            }
+
+                            .pays {
+                                width: 120px;
+                                height: 40px;
+                                padding-left: 10px;
+                                border-radius: 10px;
+                                background-color: #f5f1ec;
+                            }
+
+                            .country {
+                                line-height: 40px;
+                                padding-right: 50px;
+                            }
+
+                            textarea {
+                                width: 100%;
+                                padding: 5px;
+                                border-radius: 15px;
+                                background-color: #f5f1ec;
+
+
+                                &:hover {
+                                    background-color: lightblue;
+                                }
+                            }
+                        }
+
+                        .divalid {
+                            display: block;
+
+                            .valid {
+                                width: 70px;
+                                padding-left: 0;
+                                background-color: #f5f1ec;
+                                border: 2px inset white;
+
+                                &:hover {
+                                    background-color: #ff084e;
+
+                                }
+                            }
+
+                            @media only screen and (min-width: 920px) {
+                                line-height: 150px;
+                            }
+
+                        }
+
+                    }
+
+                    @media only screen and (min-width: 1300px) {
+                        margin-left: 150px;
+                        margin-right: 150px;
+                    }
+
+
+                }
+
+                .coche {
+                    width: 15px;
+                    height: 20px;
+                }
+
+
+
+                input {
+                    height: 40px;
+                    padding-left: 5px;
+
+                    &:hover {
+                        background-color: lightblue;
+                    }
+                }
+
+
+
+                div {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-right: 10px;
+                    width: 100%;
+
+                    h5 {
+                        font-size: 20px;
+                    }
+                }
+
+                span {
+                    color: red;
+                }
+
+                form input {
+                    border: 1px solid #ebebeb;
+                    background-color: transparent;
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+    #scrollUp {
+        position: fixed;
+        z-index: 200;
+        display: block;
+        background-color: #ff084e;
+        border-radius: 50%;
+        bottom: 60px;
+        box-shadow: 0 3px 6px 0 rgba(298, 26, 235, 0.3);
+        color: #ffffff;
+        font-size: 25px;
+        height: 40px;
+        line-height: 40px;
+        right: 60px;
+        text-align: center;
+        width: 40px;
+
+
+    }
+
+}
+
+html {
+    scroll-behavior: smooth;
+}

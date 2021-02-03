@@ -1,0 +1,326 @@
+body {
+    font-family: Poppins, sans-serif;
+
+
+    header {
+        position: fixed;
+        z-index: 10;
+        background-color: rgb(245, 241, 236);
+        width: 100%;
+        top: 0;
+        border-bottom: 1px solid lightgray;
+
+        .divhead {
+            width: 100%;
+            display: flex;
+
+
+            .navculo {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                direction: rtl;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+
+                .men {
+                    width: 58%;
+                    display: flex;
+                    flex-direction: row;
+                    direction: ltr;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    h2 {
+                        padding: 5px 10px;
+
+                        &.active {
+                            background-color: tan;
+                            border-radius: 5px;
+                        }
+
+
+                        a {
+                            text-decoration: none;
+                            color: #4e4e4e;
+
+                            &:hover {
+                                color: orange;
+                            }
+                        }
+                    }
+
+                    // .drl{
+                    //     background-color: red;
+                    //     width: 200px;
+                    //     position: relative;
+                    // }
+                }
+
+                .cube:hover .popupmenu {
+                    position: absolute;
+                    display: block;
+                }
+
+                .cube {
+                    width: 20px;
+
+                    .popupmenu {
+                        display: none;
+                        top: 0px;
+                        right: 0px;
+                        width: 30%;
+                        padding-top: 40px;
+
+                        .popupul {
+                            position: fixed;
+                            z-index: 20;
+                            display: flex;
+                            font-size: 30px;
+                            padding: 20px 40px;
+                            height: 100%;
+                            background-color: rgb(245, 241, 236);
+                            justify-content: center;
+
+                            ul {
+                                list-style: none;
+
+                                li {
+                                    margin: 10px;
+
+                                    a {
+                                        text-decoration: none;
+                                        color: #4e4e4e;
+                                    }
+
+                                    a:hover {
+                                        color: orange;
+                                    }
+
+                                    &.active {
+                                        background-color: tan;
+                                        border-radius: 5px;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                .cube {
+                    float: right;
+                    margin: 10px;
+
+                    img {
+                        height: 20px;
+                    }
+                }
+
+                .logo {
+                    display: inline-block;
+                    width: 40%;
+                    max-width: 300px;
+                }
+
+                .logo img {
+                    width: 100%;
+                    height: 40px;
+                    float: left;
+                }
+            }
+
+            .divcart {
+                width: 100%;
+                height: 40px;
+                display: flex;
+                box-sizing: border-box;
+                direction: rtl;
+
+                .logocompte {
+                    height: 20px;
+                    box-sizing: border-box;
+                }
+
+
+                .cart {
+                    float: right;
+                    padding: 10px;
+                    box-sizing: border-box;
+
+                    .acart {
+                        flex: 0 0 50px;
+
+                    }
+                }
+
+                .divlogocompte {
+                    padding: 10px;
+                    box-sizing: border-box;
+                }
+
+                .cart img {
+                    height: 20px;
+                }
+
+
+                form {
+
+                    .search {
+                        width: 150px;
+                        height: 25px;
+                        padding: 0 10px;
+                        margin: 10px;
+                        border-radius: 15px;
+                        direction: ltr;
+
+                        &:hover {
+                            background-color: lightblue;
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        @media only screen and (max-width: 992px) {
+
+            .divhead {
+
+                display: flex;
+                flex-wrap: wrap;
+
+                .navculo {
+
+                    .men {
+                        display: none;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+
+    footer {
+        background-color: grey;
+        position: absolute;
+        width: 100%;
+        height: 36vh;
+        margin-top: 50px;
+        padding-top: 10px;
+        min-height: 50px;
+
+        .divlink {
+            margin-bottom: 10px;
+
+            .link {
+                margin: 5px;
+                font-size: 25px;
+                color: black;
+                text-decoration: none;
+
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+
+
+
+        .divh6sub {
+            margin: 0;
+
+            h5 {
+                font-size: 20px;
+            }
+        }
+
+        .subscribtion_form {
+            margin: 0;
+            padding: 0;
+
+
+            form input:hover {
+                background-color: lightblue;
+            }
+        }
+
+
+        .divlog {
+            margin: 5px 20px;
+            display: inline-block;
+
+            .log {
+                width: 20px;
+            }
+        }
+
+        .divcb {
+            margin: 5px 20px;
+            display: inline-block;
+
+            .cb {
+                width: 30px;
+                height: 20px;
+            }
+        }
+
+        .copyright {
+            position: relative;
+            bottom: -15px;
+            margin: 0;
+            font-size: 15px;
+        }
+
+
+    }
+
+    @media only screen and (min-width: 992px) {
+        footer {
+            .divh6sub {
+                margin-top: 30px;
+                margin-bottom: 4px;
+            }
+
+            .copyright {
+                margin-top: 30px;
+            }
+        }
+
+        header {
+            height: 7vh;
+            display: flex;
+            align-items: center;
+            height: 14vh;
+
+            .divhead {
+                .logo {
+                    height: 80px;
+                }
+
+                .logo img {
+                    height: 100% !important;
+                }
+
+                .divcart {
+                    width: 40%;
+                    height: 80px;
+                    line-height: 80px;
+                    align-items: center;
+                }
+
+
+
+                .cube {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
